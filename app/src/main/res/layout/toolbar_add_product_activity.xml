@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_layout_height"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:ignore="GradleDependency">
+
+    <Button
+        android:id="@+id/add_product_back_button"
+        android:layout_width="@dimen/toolbar_layout_button_dimension"
+        android:layout_height="@dimen/toolbar_layout_button_dimension"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/button_small_margin"
+        android:layout_marginLeft="@dimen/button_large_margin"
+        android:layout_marginStart="@dimen/button_large_margin"
+        android:layout_marginTop="@dimen/button_small_margin"
+        android:background="@drawable/ic_arrow_back_black" />
+
+
+    <TextView
+        android:id="@+id/favorites_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_large_margin"
+        android:layout_marginStart="@dimen/layout_large_margin"
+        android:layout_toEndOf="@+id/add_product_back_button"
+        android:text="Add Product"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

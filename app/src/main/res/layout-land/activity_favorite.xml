@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fc_grey"
+    tools:context=".FavoriteActivity">
+
+
+    <include
+        android:id="@+id/favorite_toolbar"
+        layout="@layout/toolbar_favorite_activity" />
+
+    <ListView
+        android:id="@+id/favorite_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favorite_toolbar"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8sp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        android:layout_above="@+id/relativeLayout2" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_linearlayout_height"
+        android:background="@color/background_white"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/to_cart_all"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_greenButton_height"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/button_large_margin"
+            android:background="@drawable/green_button_selector"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="Add All items to Cart"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/medium_layout_textSize"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
